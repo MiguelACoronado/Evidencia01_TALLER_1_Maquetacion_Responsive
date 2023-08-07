@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    display: flex;
+
+}
+
+
+header {
+    display: flex;
+    background: var(--azulnegro);
+    width: 14em;
+    height: 100vh;
+
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo-user {
+    background: var(--degradado);
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-user .logo {
+    background-image: url(../img/opiniones/Vector-opinion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-user .logo img {
+    width: 4em;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--blanco);
+}
+
+.user .foto {
+    display: flex;
+    align-items: flex-end;
+    width: 3em;
+}
+
+.user .foto img {
+    width: 100%;
+}
+
+.user .name {
+    padding-left: 15px;
+    font-size: 8px
+}
+
+.options__menu {
+    margin-top: 15px;
+    height: 25em;
+}
+
+.options__menu a {
+    width: 100%;
+    padding: 5px 30px;
+    color: var(--blanco);
+    cursor: default;
+    display: block;
+    transition: color 300ms;
+}
+
+.options__menu a:hover {
+    background: var(--azuloscuro);
+}
+
+.options__menu .option {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.options__menu .option i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sali .option1 {
+    background: #373841;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.sali .option1 i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sali .option1 h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* FORM REGISTER */
+main {
+    display: flex;
+    background: url(../img/dormitorio.jpg);
+    background-repeat: space;
+    background-size: cover;
+    width: 1200px;
+    height: 640px;
+}
+
+.container_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_form form {
+    background-color: #ffffff98;
+    margin: 7em;
+    width: 135vh;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+form h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+form .details_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_1 label {
+    margin: 0 0 5px 40px;
+}
+
+form .details_1 input {
+    margin: 0 0 0 40px;
+    width: 25rem;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_2 label {
+    margin-left: 32rem;
+    margin-top: -3.2rem;
+}
+
+form .details_2 input {
+    margin-left: 32rem;
+    margin-top: 5px;
+    width: 20rem;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_3 {
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+form #label_1 {
+    margin: 10px 0 5px 40px;
+}
+
+form #label_2 {
+    margin: 10px 0 5px 50px;
+}
+
+
+.button_1 {
+    align-items: flex-start;
+    margin: 35px 0px 0px -65px;
+    width: 4vh;
+    height: 4vh;
+    padding: 2px 0 0 5px;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.button_1- {
+    align-items: flex-start;
+    margin: 35px 0px 0px 0px;
+    width: 4vh;
+    height: 4vh;
+    padding: 2px 0 0 5px;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+
+.number_1 {
+    width: 19vh;
+    height: 3.7vh;
+    display: block;
+    padding: 0 0 0 55px;
+    background-color: var(--blanco);
+    margin: 36px 0 0 0;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+}
+
+
+.button_2 {
+    align-items: flex-start;
+    margin: 35px 0px 0px -97px;
+    width: 4vh;
+    height: 4vh;
+    padding: 2px 0 0 5px;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.button_2- {
+    align-items: flex-start;
+    margin: 35px 0px 0px 0px;
+    width: 4vh;
+    height: 4vh;
+    padding: 2px 0 0 5px;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+
+.number_2 {
+    width: 19vh;
+    height: 3.7vh;
+    display: block;
+    padding: 0 0 0 45px;
+    background-color: var(--blanco);
+    margin: 36px 0 0 0;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+}
+
+
+form .details_4 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_4 label {
+    margin-left: 32rem;
+    margin-top: -3.3rem;
+}
+
+form .details_4 input {
+    margin-left: 32rem;
+    margin-top: 5px;
+    width: 20rem;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_5 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_5 label {
+    margin: 1rem 0 5px 40px;
+}
+
+form .details_5 input {
+    margin: 0 0 0 40px;
+    width: 25rem;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_6 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_6 label {
+    margin-left: 32rem;
+    margin-top: -3.2rem;
+}
+
+form .details_6 input {
+    margin-left: 32rem;
+    margin-top: 5px;
+    width: 20rem;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_7 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_7 label {
+    margin: 1.3rem 0 5px 40px;
+}
+
+form .details_7 input {
+    margin: 0 0 0 40px;
+    width: 49.7rem;
+    height: 6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_8 {
+    display: inline;
+}
+
+form .details_8 input {
+    margin: 50px 10px 0px 75px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: 10px #ffffff;
+    border-radius: 12px;
+}
+
+form .details_8 i {
+    font-size: 1.7rem;
+}
+
+.container_form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.container_form button {
+    width: 210px;
+    height: 2em;
+    text-decoration: none;
+    border: 1px solid var(--negro);
+    background: var(--negro);
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 5em;
+        height: auto;
+    }
+
+    .options__menu h4 {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .sali h4 {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+    .container_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_form form {
+        background-color: #ffffffbd;
+        margin: 1em;
+        width: 55vh;
+        height: 120vh;
+    }
+
+    form h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    form .details_1 label {
+        margin: 0 0 5px 20px;
+    }
+
+    form .details_1 input {
+        margin: 0 0 0 20px;
+        width: 17rem;
+        height: 1.6rem;
+
+    }
+
+    form .details_2 label {
+        margin: 15px 0 5px 20px;
+    }
+
+    form .details_2 input {
+        margin: 0 0 0 20px;
+        width: 17rem;
+        height: 1.6rem;
+    }
+
+
+    form #label_1 {
+        margin: 0px 0 5px 20px;
+    }
+
+    form #label_2 {
+        margin: 0px 0 5px 20px;
+    }
+
+    .button_1 {
+        margin: 30px 0px 0px -65px;
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .button_1- {
+        margin: 30px 0px 0px 0px;
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .button_2 {
+        margin: 30px 0px 0px -95px;
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .button_2- {
+        margin: 30px 0px 0px 0px;
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .number_1 {
+        width: 10vh;
+        height: 3.7vh;
+        padding: 0 0 0 20px;
+        margin: 30px 0 0 0;
+
+    }
+
+    .number_2 {
+        width: 10vh;
+        height: 3.7vh;
+        padding: 0 0 0 20px;
+        margin: 30px 0 0 0;
+    }
+
+
+    form .details_4 label {
+        margin: 15px 0 5px 20px;
+    }
+
+    form .details_4 input {
+        margin: 0 0 0 20px;
+        width: 17rem;
+        height: 1.6rem;
+    }
+
+    form .details_5 label {
+        margin: 15px 0 5px 20px;
+    }
+
+    form .details_5 input {
+        margin: 0 0 0 20px;
+        width: 17rem;
+        height: 1.6rem;
+    }
+
+    form .details_6 label {
+        margin: 15px 0 5px 20px;
+    }
+
+    form .details_6 input {
+        margin: 0 0 0 20px;
+        width: 17rem;
+        height: 1.6rem;
+    }
+
+    form .details_7 label {
+        margin: 15px 0 5px 20px;
+    }
+
+    form .details_7 input {
+        margin: 0 0 0 20px;
+        width: 17rem;
+        height: 3rem;
+    }
+
+    form .details_8 {
+        display: inline;
+        margin-left: -10px;
+    }
+
+    form .details_8 input {
+        margin: 18px 5px 0px 50px;
+    }
+
+    form .details_8 i {
+        font-size: 1.3rem;
+    }
+
+
+    .container_form .btn {
+        margin-top: 1em;
+    }
+
+    .container_form button {
+        width: 170px;
+        height: 2em;
+        font-size: 0.9em;
+    }
+}

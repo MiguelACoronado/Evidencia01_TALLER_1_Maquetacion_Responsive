@@ -1,0 +1,55 @@
+*{
+    background: url('../img/bg-login.png');
+    background-repeat: no-repeat;
+   
+    height: 5vh;
+    
+    
+}
+
+#h2{
+    text-align: center;
+}
+.card{
+    display: flex;
+    background: rgb(208, 208, 208);
+    height: auto;
+    width: max-content;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    border-radius: 1em;
+}
+#label{
+    color: black;
+    font-size: large;
+}
+.input{
+    background-color: white;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);;
+    width: 35rem;
+    height: 40px;
+    border:0px;
+}
+.input-1{
+    background-color: white;
+    box-shadow: 10px;
+    width: 50%;
+    border:0px;
+}
+#Registrar{
+    display: flex;
+    color: white;
+    background: black;
+    width: 50%;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+}
+.numero{
+    display: flex;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}

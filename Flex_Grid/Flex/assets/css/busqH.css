@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    display: flex;
+}
+
+
+header {
+    background: var(--azulnegro);
+    width: 14em;
+    height: 100vh;
+
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo-user {
+    background: var(--degradado);
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-user .logo {
+    background-image: url(../img/opiniones/Vector-opinion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-user .logo img {
+    width: 4em;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--blanco);
+}
+
+.user .foto {
+    display: flex;
+    align-items: flex-end;
+    width: 3em;
+}
+
+.user .foto img {
+    width: 100%;
+}
+
+.user .name {
+    padding-left: 15px;
+    font-size: 8px
+}
+
+.options__menu {
+    margin-top: 15px;
+    height: 25em;
+}
+
+.options__menu a {
+    width: 100%;
+    padding: 5px 30px;
+    color: var(--blanco);
+    cursor: default;
+    display: block;
+    transition: color 300ms;
+}
+
+.options__menu a:hover {
+    background: var(--azuloscuro);
+}
+
+.options__menu .option {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.options__menu .option i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sali .option1 {
+    background: #373841;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.sali .option1 i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sali .option1 h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+/* FORM AND ROOM */
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 2em;
+    margin-left: 30vh;
+    margin-top: 16vh;
+    background: var(--azuloscuro);
+    border-radius: 3px;
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.container_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 55vh;
+    margin: 2vh;
+    margin-left: 25vh;
+    background: var(--blanco);
+    box-sizing: border-box;
+    box-shadow: 4px 3px 0px #3379b762;
+    border-radius: 10px;
+
+}
+
+.container_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_form .details {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    color: var(--negro2);
+    font-weight: 700;
+
+}
+
+.container_form label {
+    margin-right: 20px;
+    font-weight: 900;
+}
+
+.container_form input {
+    width: 14em;
+    height: 5vh;
+    padding: 1em;
+}
+
+.container_form select {
+    width: 14em;
+    height: 5vh;
+    padding-left: 1em;
+}
+
+.container_form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.container_form button {
+    width: 230px;
+    height: 2em;
+    text-decoration: none;
+    border: 1px solid #000;
+    background: #000;
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80vh;
+    margin-top: -66vh;
+}
+
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--blanco);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 0px #00000065;
+    width: 38vh;
+    height: 38vh;
+    margin: 1em;
+}
+
+.room_card {
+    background: url(../img/habitacion1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13em;
+    height: 10em;
+}
+
+.room_card p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3379b7b2;
+    margin-top: 20vh;
+    width: 31.7vh;
+    height: 5vh;
+    color: var(--blanco);
+}
+
+.room h3 {
+    margin-top: 8px;
+    font-size: 1.4em;
+    font-weight: 590;
+}
+
+.room button {
+    margin-top: 0.5em;
+    width: 200px;
+    height: 1.5em;
+    text-decoration: none;
+    border: 1px solid #000;
+    background: #000;
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.details input::-webkit-calendar-picker-indicator {
+    background: url(../img/calendar-days-solid.svg);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.details input::-webkit-datetime-edit-month-field {
+    color: rgba(255, 255, 255, 0);
+}
+
+.details input::-webkit-datetime-edit-day-field {
+    color: rgba(255, 255, 255, 0);
+}
+
+.details input::-webkit-datetime-edit-year-field {
+    color: rgba(0, 0, 255, 0);
+}
+
+
+.details input {
+    color: var(--azuloscuro);
+}
+
+
+
+
+.room button:hover {
+    background: var(--azuloscuro);
+    border: 1px solid var(--azuloscuro);
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 5em;
+        height: auto;
+    }
+
+    .options__menu h4 {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .sali h4 {
+        display: none;
+    }
+
+    .title {
+        margin: 30px 20px 0px 75px;
+    }
+
+    .container_form {
+        margin: 20px 20px 0px 40px;
+        height: 60vh;
+    }
+
+    .rooms {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 20px 0px 65px;
+    }
+
+    .room {
+        width: 43vh;
+        height: 48vh;
+        margin: 1em;
+    }
+
+    .room_card p {
+        width: 36.7vh;
+        height: 8vh;
+    }
+
+    #room_3 {
+        display: none;
+    }
+
+    #room_4 {
+        display: none;
+    }
+
+
+}

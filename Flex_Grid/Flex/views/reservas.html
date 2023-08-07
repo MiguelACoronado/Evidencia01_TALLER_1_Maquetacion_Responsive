@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/estilos_reservas.css">
+  <title>Vista de búsqueda de habitaciones</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Contenedor de la izquierda -->
+    <div class="left-container">
+      <h2 class="title">Busqueda de Habitaciones</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <div class="input-container">
+        <label for="entrada">Entrada:</label>
+        <input type="date" id="entrada">
+      </div>
+      <div class="input-container">
+        <label for="salida">Salida:</label>
+        <input type="date" id="salida">
+      </div>
+      <div class="input-container">
+        <label for="adultos">Adultos:</label>
+        <input type="number" id="adultos" min="1" max="10">
+      </div>
+      <div class="input-container">
+        <label for="ninos">Niños:</label>
+        <input type="number" id="ninos" min="0" max="5">
+      </div>
+      <button class="ver-habitaciones-button">Ver habitaciones disponibles</button>
+    </div>
+
+    <!-- Contenedor de la derecha -->
+    <div class="right-container">
+        <div class="hotel">
+          <img class="hotel-image" src="../assets/img/habitacion1.png" alt="Hotel 1">
+          <div class="image-overlay">
+            <span class="plus-sign">+</span>
+            <span class="ver-mas-text">Ver más</span>
+          </div>
+          <center><div class="hotel-price">128.000</div></center>
+          <center><button class="reservar-button2">Reservar</button> </center>
+        </div>
+        <div class="hotel">
+          <img class="hotel-image" src="../assets/img/habitacion1.png" alt="Hotel 2">
+          <div class="image-overlay">
+            <span class="plus-sign">+</span>
+            <span class="ver-mas-text">Ver más</span>
+          </div>
+          <center><div class="hotel-price">128.000</div>
+          <button class="reservar-button">Reservar</button></center>
+        </div>
+        <div class="hotel">
+          <img class="hotel-image" src="../assets/img/habitacion1.png" alt="Hotel 3">
+          <div class="image-overlay">
+            <span class="plus-sign">+</span>
+            <span class="ver-mas-text">Ver más</span>
+          </div>
+          <center><div class="hotel-price">128.000</div>
+          <button class="reservar-button2">Reservar</button></center>
+        </div>
+        <div class="hotel">
+          <img class="hotel-image" src="../assets/img/habitacion1.png" alt="Hotel 4">
+          <div class="image-overlay">
+            <span class="plus-sign">+</span>
+            <span class="ver-mas-text">Ver más</span>
+          </div>
+          <center><div class="hotel-price">128.000</div>
+          <button class="reservar-button">Reservar</button></center>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
